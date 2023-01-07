@@ -1,7 +1,7 @@
 import React, {Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Home from './traditional/Home'
+import Home from './traditional/Home/Home'
 // import './App.css';
 
 const OS = lazy(() => import('./creative/OS'))
