@@ -3,17 +3,18 @@
   align-items: center;
   width: 100%;
   flex-direction: column;
-  height: 100vh;
 }
 
 #greetings {
-  padding-top: 20rem;
+  padding-top: 8rem;
   font-size: 3rem;
-  padding-bottom: 10rem;
+  padding-bottom: 9rem;
 }
 
 .about {
   font-size: 1.2rem;
+  margin: 0rem 2rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=Intro.css.map */

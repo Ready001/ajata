@@ -3,20 +3,16 @@ body {
   height: 100%;
   min-height: 100%;
 }
-
 a {
   text-decoration: none;
   color: #fff;
 }
-
 a.active {
   border-bottom: 2px solid #85c2ff;
 }
-
 .header {
   height: auto;
 }
-
 #navbar-container {
   position: fixed;
   height: 100%;
@@ -31,9 +27,8 @@ a.active {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-
 #navbar-container h1 {
-  padding: 27rem 0;
+  padding: 21rem 0;
   height: 100%;
   font-size: 7rem;
   text-align: center;
@@ -44,13 +39,12 @@ a.active {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-
 #navbar-container.small {
   height: auto;
   float: left;
 }
 
-#navbar-container.small ul {
+#navbar-container.small ul{
   transform: translateY(1rem);
 }
 
@@ -67,26 +61,22 @@ a.active {
 body {
   font-family: "Open Sans", sans-serif;
 }
-
 nav {
   width: 100%;
   height: 60px;
   position: fixed;
   top: 0;
 }
-
 nav ul {
   padding: 20px;
   margin: 0 auto;
   list-style: none;
   text-align: center;
 }
-
 nav ul li {
   display: inline-block;
   margin: 0 10px;
 }
-
 nav ul li a {
   padding: 10px 0;
   color: #fff;
@@ -95,30 +85,27 @@ nav ul li a {
   font-weight: 520;
   transition: all 0.2s ease;
 }
-
 nav ul li a:hover {
   color: #85c2ff;
 }
-
 h1 {
   font-size: 5rem;
   color: #34495e;
+  margin: 0rem;
 }
-
 section {
   width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   border-bottom: 1px solid #ccc;
+  padding: 3rem 1rem;
 }
 
 section:nth-child(even) {
   background: #ecf0f1;
 }
-
 section:nth-child(odd) {
   background: #eff9ff;
 }
-
 .sections section:first-child {
   margin-top: 100px;
 }
@@ -131,5 +118,3 @@ section:nth-child(odd) {
 .current {
   color: black;
 }
-
-/*# sourceMappingURL=Home.css.map */
