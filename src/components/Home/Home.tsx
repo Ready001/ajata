@@ -1,13 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
-import Nav from "react-bootstrap/Nav";
+import { scrollAnimation } from "../../utils/scrollAnimation";
 
 import Intro from "../Intro/Intro";
 import "./Home.css";
 import useOnScreen from "./UseOnScreen";
+import Experience from "../Experience/Experience";
 
 function Home() {
   const [navClass, setNavClass] = useState("");
 
+  //makes name smaller and go into navbar if scrolled down
   const handleScroll = () => {
     var scrollTop: number = window.scrollY;
     if (scrollTop > 1) {
@@ -18,6 +20,21 @@ function Home() {
   };
 
   window.addEventListener("scroll", handleScroll);
+
+
+  //duration of scroll animation for navbar scroll
+  const scrollAnimationDuration = 2000;
+
+  //smooth scroll to an element
+  const scrollTo = (id: string) => {
+    let element = document.getElementById(id)
+
+    if(element != null){
+      scrollAnimation(element.offsetTop, window.scrollY, scrollAnimationDuration)
+    }
+
+  }
+
 
   
   const section1: any = useRef();
@@ -36,26 +53,26 @@ function Home() {
       <header>
         <div className={navClass} id="navbar-container">
           <h1>
-            <a href="#">Ajata Reddy</a>
+            <a>Ajata Reddy</a>
           </h1>
           <nav>
             <ul>
               <li>
-                <a href="#1" className={section1_class}>
+                <a className={section1_class} onClick={() => scrollTo("1")}>
                   About me
                 </a>
               </li>
               <li>
-                <a href="#2" className={section2_class}>Experience</a>
+                <a className={section2_class} onClick={() => scrollTo("2")}>Experience</a>
               </li>
               <li>
-                <a href="#3" className={section3_class}>Education</a>
+                <a className={section3_class} onClick={() => scrollTo("3")}>Education</a>
               </li>
               <li>
-                <a href="#4" className={section4_class}>Projects</a>
+                <a className={section4_class} onClick={() => scrollTo("4")}>Projects</a>
               </li>
               <li>
-                <a href="#5" className={section5_class}>Skills</a>
+                <a className={section5_class} onClick={() => scrollTo("5")}>Skills</a>
               </li>
             </ul>
           </nav>
@@ -65,7 +82,7 @@ function Home() {
         <Intro />
       </section>
       <section id="2" ref={section2}>
-        <h1>Second</h1>
+        <Experience />
       </section>
       <section id="3" ref={section3}>
         <h1>Third</h1>

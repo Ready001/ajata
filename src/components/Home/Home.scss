@@ -84,6 +84,7 @@ nav ul li a {
   text-decoration: none;
   font-weight: 520;
   transition: all 0.2s ease;
+  cursor: default;
 }
 nav ul li a:hover {
   color: #85c2ff;
@@ -94,7 +95,6 @@ h1 {
   margin: 0rem;
 }
 section {
-  width: 100%;
   min-height: 100vh;
   border-bottom: 1px solid #ccc;
   padding: 3rem 1rem;
