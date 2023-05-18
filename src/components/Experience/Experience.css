@@ -36,14 +36,16 @@
 }
 
 .timeline-container {
-    width: 20%;
+  width: 20%;
 }
 
 .section-container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .entries-container {
-    width:75%;
+  width: 75%;
 }
+
+/*# sourceMappingURL=Experience.css.map */
