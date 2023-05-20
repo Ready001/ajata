@@ -118,13 +118,17 @@ function Experience() {
             <p className="entry-content">
               <ul className="summary-list">
                 <li>
-                Create full stack web app using <b>Spring</b> and <b>React.js</b> to allow employees to interact with internal health study data in a user friendly design.
+                  Create full stack web app using <b>Spring</b> and{" "}
+                  <b>React.js</b> to allow employees to interact with internal
+                  health study data in a user friendly design.
                 </li>
                 <li>
-                Connected app to 20 GB <b>MySQL</b> database of scientific data, displaying the data in an intuitive interface.
+                  Connected app to 20 GB <b>MySQL</b> database of scientific
+                  data, displaying the data in an intuitive interface.
                 </li>
                 <li>
-                Significantly improved data loading speeds from legacy app, saving time for users.
+                  Significantly improved data loading speeds from legacy app,
+                  saving time for users.
                 </li>
               </ul>
             </p>
@@ -139,19 +143,29 @@ function Experience() {
               />
               <div className="entry-title">
                 <h2>Undergrad Research Assistant</h2>
-                <h3>University of North Texas &nbsp; &bull; &nbsp; Denton, Texas</h3>
+                <h3>
+                  University of North Texas &nbsp; &bull; &nbsp; Denton, Texas
+                </h3>
               </div>
             </div>
 
             <p className="entry-content">
-            <ul className="summary-list">
+              <ul className="summary-list">
                 <li>
-                Worked on an <b>NLP</b> and <b>ML</b> project that used an EEG to find questions which provoke deep thought in the elderly.                </li>
-                <li>
-                Used E-Prime, a programming language tailored for computerized experiments and MATLAB.
+                  Worked on Reading with Robots, part of a larger project called
+                  Companionbots that aims to help the elderly and those who
+                  suffer the depression through dialoguing. Reading with Robots
+                  uses <b>NLP</b>, <b>ML</b>, and an <b>EEG</b> to train a robot to read with the
+                  elderly person and ask questions provoking deep thought about
+                  the text.
                 </li>
                 <li>
-                Presented research at the “Enabling Health Technologies” workshop.
+                  Used E-Prime, a programming language tailored for computerized
+                  experiments and MATLAB.
+                </li>
+                <li>
+                  Presented research at the “Enabling Health Technologies”
+                  workshop.
                 </li>
               </ul>
             </p>
