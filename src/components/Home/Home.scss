@@ -8,7 +8,7 @@ a {
   color: #fff;
 }
 a.active {
-  border-bottom: 2px solid #85c2ff;
+  border-bottom: 4px solid #85c2ffa4;
 }
 .header {
   height: auto;
@@ -41,10 +41,13 @@ a.active {
 }
 #navbar-container.small {
   height: auto;
-  float: left;
 }
 
 #navbar-container.small ul{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 15px;
   transform: translateY(1rem);
 }
 

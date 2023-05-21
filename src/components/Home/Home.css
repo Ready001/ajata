@@ -10,7 +10,7 @@ a {
 }
 
 a.active {
-  border-bottom: 2px solid #85c2ff;
+  border-bottom: 4px solid rgba(133, 194, 255, 0.6431372549);
 }
 
 .header {
@@ -47,10 +47,13 @@ a.active {
 
 #navbar-container.small {
   height: auto;
-  float: left;
 }
 
 #navbar-container.small ul {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 15px;
   transform: translateY(1rem);
 }
 
