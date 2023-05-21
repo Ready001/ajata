@@ -5,6 +5,7 @@
 .section-header {
   text-align: center;
   margin-bottom: 5rem;
+  font-size: 3rem;
 }
 
 .timeline {
@@ -21,7 +22,7 @@
   align-items: center;
   justify-content: center;
   color: white;
-  border-radius: 10%;
+  border-radius: 10px 20px;
   background-color: #e5e5e5;
   font-size: large;
 }
@@ -62,6 +63,7 @@
 
 .company-logo {
   height: auto;
+  margin-left: 0.5rem;
   margin-right: 1rem;
 }
 
@@ -111,6 +113,10 @@
   }
   .entry-content {
     height: 42em;
+  }
+  .entry-title {
+    text-align: end;
+    padding-right: 1rem;
   }
 }
 

@@ -5,6 +5,7 @@ import Intro from "../Intro/Intro";
 import "./Home.css";
 import useOnScreen from "./UseOnScreen";
 import Experience from "../Experience/Experience";
+import Education from "../Education/Education";
 
 function Home() {
   const [navClass, setNavClass] = useState("");
@@ -85,7 +86,7 @@ function Home() {
         <Experience />
       </section>
       <section id="3" ref={section3}>
-        <h1>Third</h1>
+        <Education />
       </section>
       <section id="4" ref={section4}>
         <h1>Fourth </h1>
