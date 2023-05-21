@@ -10,7 +10,7 @@ a {
 }
 
 a.active {
-  border-bottom: 4px solid rgba(133, 194, 255, 0.6431372549);
+  border-bottom: 4px solid rgba(133, 194, 255, 0.7960784314);
 }
 
 .header {
@@ -135,6 +135,16 @@ section:nth-child(odd) {
 
 .current {
   color: black;
+}
+
+.whole-section {
+  justify-items: center;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 3rem;
 }
 
 /*# sourceMappingURL=Home.css.map */

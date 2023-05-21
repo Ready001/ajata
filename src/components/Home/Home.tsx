@@ -6,6 +6,8 @@ import "./Home.css";
 import useOnScreen from "./UseOnScreen";
 import Experience from "../Experience/Experience";
 import Education from "../Education/Education";
+import Projects from "../Projects/Projects";
+import Skills from "../Skills/Skills";
 
 function Home() {
   const [navClass, setNavClass] = useState("");
@@ -22,22 +24,22 @@ function Home() {
 
   window.addEventListener("scroll", handleScroll);
 
-
   //duration of scroll animation for navbar scroll
   const scrollAnimationDuration = 2000;
 
   //smooth scroll to an element
   const scrollTo = (id: string) => {
-    let element = document.getElementById(id)
+    let element = document.getElementById(id);
 
-    if(element != null){
-      scrollAnimation(element.offsetTop, window.scrollY, scrollAnimationDuration)
+    if (element != null) {
+      scrollAnimation(
+        element.offsetTop,
+        window.scrollY,
+        scrollAnimationDuration
+      );
     }
+  };
 
-  }
-
-
-  
   const section1: any = useRef();
   const section1_class = useOnScreen(section1);
   const section2: any = useRef();
@@ -64,16 +66,24 @@ function Home() {
                 </a>
               </li>
               <li>
-                <a className={section2_class} onClick={() => scrollTo("2")}>Experience</a>
+                <a className={section2_class} onClick={() => scrollTo("2")}>
+                  Experience
+                </a>
               </li>
               <li>
-                <a className={section3_class} onClick={() => scrollTo("3")}>Education</a>
+                <a className={section3_class} onClick={() => scrollTo("3")}>
+                  Education
+                </a>
               </li>
               <li>
-                <a className={section4_class} onClick={() => scrollTo("4")}>Projects</a>
+                <a className={section4_class} onClick={() => scrollTo("4")}>
+                  Projects
+                </a>
               </li>
               <li>
-                <a className={section5_class} onClick={() => scrollTo("5")}>Skills</a>
+                <a className={section5_class} onClick={() => scrollTo("5")}>
+                  Skills
+                </a>
               </li>
             </ul>
           </nav>
@@ -89,10 +99,10 @@ function Home() {
         <Education />
       </section>
       <section id="4" ref={section4}>
-        <h1>Fourth </h1>
+        <Projects />
       </section>
       <section id="5" ref={section5}>
-        <h1>Fifth</h1>
+        <Skills />
       </section>
     </div>
   );

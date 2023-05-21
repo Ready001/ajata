@@ -1,13 +1,3 @@
-.whole-section {
-  justify-items: center;
-}
-
-.section-header {
-  text-align: center;
-  font-size: 3rem;
-  margin-bottom: 5rem;
-}
-
 .education-container {
   display: flex;
   flex-direction: column;
@@ -41,9 +31,9 @@
 }
 
 .classes-container h4 {
-    opacity: .7;
     text-align: center;
     width: 100%;
+    color: #34495e;
 }
 
 .classes{

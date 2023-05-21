@@ -1,0 +1,39 @@
+$outline-color: #c0cdd1;
+
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    color: #34495e;
+}
+
+.category-skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skill-card {
+    margin: .5rem;
+    padding: .2rem 1.6rem;
+    border:solid 2px $outline-color;
+    color: #698690;
+    border-radius: 1rem;
+}
+
+#search-bar {
+    width: 10rem;
+    border-radius: .5rem;
+    padding:.5rem;
+    border: solid 2px $outline-color;
+    color: #5e7a83;
+}
