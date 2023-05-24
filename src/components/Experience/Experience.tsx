@@ -155,9 +155,9 @@ function Experience() {
                   Worked on Reading with Robots, part of a larger project called
                   Companionbots that aims to help the elderly and those who
                   suffer the depression through dialoguing. Reading with Robots
-                  uses <b>NLP</b>, <b>ML</b>, and an <b>EEG</b> to train a robot to read with the
-                  elderly person and ask questions provoking deep thought about
-                  the text.
+                  uses <b>NLP</b>, <b>ML</b>, and an <b>EEG</b> to train a robot
+                  to read with the elderly person and ask questions provoking
+                  deep thought about the text.
                 </li>
                 <li>
                   Used E-Prime, a programming language tailored for computerized

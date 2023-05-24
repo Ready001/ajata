@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { scrollAnimation } from "../../utils/scrollAnimation";
+import { scrollTo } from "../../utils/scrollAnimation";
 
 import Intro from "../Intro/Intro";
 import "./Home.css";
@@ -23,22 +23,6 @@ function Home() {
   };
 
   window.addEventListener("scroll", handleScroll);
-
-  //duration of scroll animation for navbar scroll
-  const scrollAnimationDuration = 2000;
-
-  //smooth scroll to an element
-  const scrollTo = (id: string) => {
-    let element = document.getElementById(id);
-
-    if (element != null) {
-      scrollAnimation(
-        element.offsetTop,
-        window.scrollY,
-        scrollAnimationDuration
-      );
-    }
-  };
 
   const section1: any = useRef();
   const section1_class = useOnScreen(section1);

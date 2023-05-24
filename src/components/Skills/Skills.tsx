@@ -134,7 +134,6 @@ function Skills() {
 }
 
 const SkillCard = (skillName: any) => {
-  console.log(skillName.skillName);
   return (
     <div className="skill-card">
       <p className="skill-name">{skillName.skillName}</p>
