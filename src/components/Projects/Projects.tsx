@@ -36,7 +36,7 @@ function Projects() {
             src={process.env.PUBLIC_URL + "/project_imgs/coder_connect.jpg"}
           />
           <h4
-            className="project-title"
+            className="project-title linked-title"
             onClick={() =>
               window.open(
                 "https://github.com/satyasuravaram/coderconnect",
@@ -46,6 +46,17 @@ function Projects() {
           >
             CoderConnect
           </h4>
+          <h5 className="skills-used">
+            <span>ReactJS</span>
+            <span>&bull;</span>
+            <span>ExpressJS</span>
+            <span>&bull;</span>
+            <span>NodeJS</span>
+            <span>&bull;</span>
+            <span>MongoDB</span>
+            <span>&bull;</span>
+            <span>WebRTC</span>
+          </h5>
           <ul>
             <li>
               CoderConnect is a volunteer tutoring website for students who wish
@@ -56,10 +67,6 @@ function Projects() {
               Made site highly responsive and improved UX while working in an
               agile environment.
             </li>
-            <li>
-              Made with MERN Stack (MongoDB, ExpressJS, ReactJS, NodeJS) and
-              WebRTC.
-            </li>
           </ul>
         </div>
         <div className="project-card">
@@ -68,7 +75,7 @@ function Projects() {
             src={process.env.PUBLIC_URL + "/project_imgs/playback.png"}
           />
           <h4
-            className="project-title"
+            className="project-title linked-title"
             onClick={() =>
               window.open(
                 "https://github.com/Sshatzkin/Audio-Feedback",
@@ -78,28 +85,87 @@ function Projects() {
           >
             Playback
           </h4>
+          <h5 className="skills-used">
+            <span>Firebase</span>
+            <span>&bull;</span>
+            <span>HTML5</span>
+            <span>&bull;</span>
+            <span>CSS3</span>
+            <span>&bull;</span>
+            <span>JavaScript</span>
+          </h5>
           <ul>
             <li>
               Playback helps people give music students feedback in an
               asynchronous virtual way.
             </li>
-            <li>Used HTML, CSS, and JS with Bootstrap.</li>
             <li>Utilized Firebase for database and Google OAuth.</li>
           </ul>
         </div>
+
+        <div className="project-card-left project-card">
+          <div className="project-card-inner">
+            <img
+              className="project-img left-img"
+              src={process.env.PUBLIC_URL + "/project_imgs/uni_news.png"}
+            />
+          </div>
+          <div className="project-card-inner">
+            <h4 className="project-title">Uni News</h4>
+            <h5 className="skills-used">
+              <span>ReactJS</span>
+              <span>&bull;</span>
+              <span>NodeJS</span>
+              <span>&bull;</span>
+              <span>MongoDB</span>
+              <span>&bull;</span>
+              <span>Python (API)</span>
+            </h5>
+
+            <ul>
+              <li>
+                An aggregate news site that scrapes multiple university news
+                sites to provide users with the latest news related to the
+                universities they subscribe to.
+              </li>
+              <li>
+                Created a{" "}
+                <a
+                  href="https://github.com/Ready001/UniNewsScraper"
+                  target="_blank"
+                >
+                  web scraper REST API
+                </a>{" "}
+                to provide Uni News with the latest articles from multiple
+                university news websites.
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <div className="project-card">
           <img
             className="project-img top-img"
             src={process.env.PUBLIC_URL + "/project_imgs/personal.png"}
           />
           <h4
-            className="project-title"
+            className="project-title linked-title"
             onClick={() =>
               window.open("https://github.com/Ready001/ajata", "_blank")
             }
           >
             My Personal Site
           </h4>
+          <h5 className="skills-used">
+            <span>React</span>
+            <span>&bull;</span>
+            <span>TypeScript</span>
+            <span>&bull;</span>
+            <span>Node</span>
+            <span>&bull;</span>
+            <span>Sass</span>
+          </h5>
+
           <ul>
             <li>This website you are on right now.</li>
             <li>Used React, Node, and Typescript.</li>
@@ -115,42 +181,151 @@ function Projects() {
         <h3 className="project-section-title">AI and Machine Learning</h3>
 
         <div className="project-card-left project-card">
-            <div className="project-card-inner">
-          <img
-            className="project-img left-img"
-            src={process.env.PUBLIC_URL + "/project_imgs/snake.gif"}
-          />
+          <div className="project-card-inner">
+            <img
+              className="project-img left-img"
+              src={process.env.PUBLIC_URL + "/project_imgs/snake.gif"}
+            />
           </div>
           <div className="project-card-inner">
             <h4 className="project-title">Reinforcement Learning Snake</h4>
+            <h5 className="skills-used">Python &nbsp; &bull; &nbsp; Pygame</h5>
             <ul>
               <li>
                 Made an AI agent to play snake based on the Q-learning
                 algorithm.
               </li>
-              <li>Utilized pygame for the graphical elements.</li>
+              <li>Utilized Pygame for the graphical elements.</li>
             </ul>
           </div>
         </div>
 
         <div className="project-card-left project-card">
-            <div className="project-card-inner">
-                                <img
-            className="project-img left-img"
-            src={process.env.PUBLIC_URL + "/project_imgs/cnn_movie_reviews.png"}
-          />
-          <img
-            className="project-img left-img"
-            src={process.env.PUBLIC_URL + "/project_imgs/bigram.gif"}
-          />
+          <div className="project-card-inner">
+            <img
+              className="project-img left-img"
+              src={
+                process.env.PUBLIC_URL + "/project_imgs/cnn_movie_reviews.png"
+              }
+            />
+            <img
+              className="project-img left-img"
+              src={process.env.PUBLIC_URL + "/project_imgs/bigram.gif"}
+            />
           </div>
           <div className="project-card-inner">
             <h4 className="project-title">Movie Review Sentiment Analysis</h4>
+            <h5 className="skills-used">Python &nbsp; &bull; &nbsp; PyTorch</h5>
+
             <ul>
               <li>
-                Performed sentiment analysis on movie reviews using both a CNN and a bigram model.
+                Performed sentiment analysis on movie reviews using both a CNN
+                and a naive bayes unigram/bigram mixture model.
               </li>
-              <li>Utilized pygame for the graphical elements.</li>
+              <li>
+                Employed PyTorch for the Convolutional Neural Network (CNN)
+                Model and made the unigram/bigram mixture model from scratch.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="project-card-left project-card">
+          <div className="project-card-inner">
+            <img
+              className="project-img left-img"
+              src={process.env.PUBLIC_URL + "/project_imgs/clip.png"}
+            />
+          </div>
+          <div className="project-card-inner">
+            <h4 className="project-title">Flower Type Prediction</h4>
+            <h5 className="skills-used">Python &nbsp; &bull; &nbsp; CLIP</h5>
+
+            <ul>
+              <li>
+                Utilized OpenAI's{" "}
+                <a href="https://github.com/OpenAI/CLIP" target="_blank">
+                  CLIP
+                </a>{" "}
+                neural network to determine flower type from images.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="project-card">
+          <img
+            className="project-img left-img"
+            src={process.env.PUBLIC_URL + "/project_imgs/dep_tree.png"}
+          />
+          <div className="project-card-inner">
+            <h4 className="project-title">Neural Network Dependency Parser</h4>
+            <h5 className="skills-used">
+              <span>Python</span>
+              <span>&bull;</span>
+              <span>PyTorch</span>
+              <span>&bull;</span>
+              <span>spaCy</span>
+            </h5>
+
+            <ul>
+              <li>
+                Built a neural transition-based dependency parser based on the
+                paper{" "}
+                <a
+                  href="https://nlp.stanford.edu/pubs/emnlp2014-depparser.pdf"
+                  target="_blank"
+                >
+                  A Fast and Accurate Dependency Parser using Neural Networks
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="project-card">
+          <img
+            className="project-img top-img"
+            src={process.env.PUBLIC_URL + "/project_imgs/word_embeddings.png"}
+          />
+          <div className="project-card-inner">
+            <h4 className="project-title">CBOW Embeddings</h4>
+            <h5 className="skills-used">
+              <span>Python</span>
+              <span>&bull;</span>
+              <span>PyTorch</span>
+              <span>&bull;</span>
+              <span>Plotly</span>
+            </h5>
+            <ul>
+              <li>
+                Generated dense continuous-bag-of-words (CBOW) embeddings from
+                WikiText-2, a corpus of wikipedia articles.
+              </li>
+              <li>
+                Used a context of 4 words (the previous 2 words and the next 2
+                words)
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="project-card project-card-left">
+          <div className="project-card-inner">
+          <img
+            className="project-img left-img"
+            src={process.env.PUBLIC_URL + "/project_imgs/viterbi.gif"}
+          />
+          </div>
+          <div className="project-card-inner">
+            <h4 className="project-title">HMM POS Tagging</h4>
+            <h5 className="skills-used">
+              <span>Python</span>
+            </h5>
+            <ul>
+              <li>
+                Created a Hidden Markov Model (HMM) using the Viterbi algorithm for part of speech (POS) tagging.
+              </li>
             </ul>
           </div>
         </div>
@@ -159,7 +334,29 @@ function Projects() {
       <div className="project-section" id="other-projects">
         <h3 className="project-section-title">Other</h3>
 
-        <div className="project-card"></div>
+        <div className="project-card">
+          <img
+            className="project-img top-img"
+            src={process.env.PUBLIC_URL + "/project_imgs/weather_app.png"}
+            style={{width: "10rem"}}
+          />
+          <div className="project-card-inner">
+            <h4 className="project-title">Android Location App</h4>
+            <h5 className="skills-used">
+              <span>Java</span>
+              <span>&bull;</span>
+              <span>Espresso</span>
+            </h5>
+            <ul>
+              <li>
+                An app which combines Google Maps API and OpenWeather API to give detailed information about a set of locations the user has added
+              </li>
+              <li>
+                Utilized Espresso and JUnit to make a comprehensive test suite with instrumented tests, unit tests, mock tests, and more.
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );

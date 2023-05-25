@@ -137,4 +137,6 @@ export const skills_full: Array<skill_entry> = [
   { name: "Verilog", related: [], category: Categories.other },
   { name: "Web Development", related: ["web"], category: Categories.other },
   { name: "Android Development", related: ["java"], category: Categories.other },
+  { name: "Git", related: ["version control"], category: Categories.other },
+
 ];

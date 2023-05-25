@@ -4,7 +4,8 @@ $analogous-purple: #eff1ff;
 $neutral-purple: #eff1ff;
 $triadic-green: #f9ffef;
 $complementary-peach: #fff5ef;
-
+$shade-med: #5a5d60;
+$shade-dark: #3c3e40;
 
 .projects-navbar {
     display: flex;
@@ -40,9 +41,10 @@ $complementary-peach: #fff5ef;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $tone-med;
+    background-color: $complementary-peach;
     padding: 1rem 2rem;
     border-radius: 10px;
+    border: 3px solid $tone-dark;
     margin: 1rem;
 }
 
@@ -56,6 +58,7 @@ $complementary-peach: #fff5ef;
     display: flex;
     flex-direction: column;
     width: 50%;
+    height: 100%;
 }
 
 .top-img {
@@ -63,7 +66,7 @@ $complementary-peach: #fff5ef;
 }
 
 .left-img {
-    width: 50%;
+    width: 100%;
 }
 
 .project-title {
@@ -72,10 +75,38 @@ $complementary-peach: #fff5ef;
     font-size: 1.8rem;
     margin: 1rem;
     margin-top: 1.5rem;
-    color: $neutral-purple;
+    color: $shade-dark;
+    align-self: center;
 }
 
 .project-card ul {
     margin-top: 0px;
     width: 80%;
+    color: $shade-dark;
+}
+
+.skills-used {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    margin-top: 0rem;
+    color: $shade-med;
+    width: 40%;
+}
+
+.project-card-left .skills-used {
+    width: 100%;
+}
+
+ul a {
+    color: $tone-dark;
+}
+
+ul a:hover {
+    color: $shade-dark;
+}
+
+.linked-title:hover {
+    color: $tone-dark;
 }
