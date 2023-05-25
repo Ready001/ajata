@@ -1,7 +1,7 @@
 {
   "name": "ajata",
   "version": "0.1.0",
-  "homepage": "https://ready001.github.io/ajata",
+  "homepage": "https://ready001.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
