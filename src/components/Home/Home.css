@@ -147,4 +147,23 @@ section:nth-child(odd) {
   font-size: 3rem;
 }
 
+#linkedin-icon {
+  padding: 20px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 1.5rem;
+  color: #0077bf;
+  z-index: 3;
+  cursor: pointer;
+}
+
+#linkedin-icon:hover {
+  color: #0A66C2;
+}
+
+#navbar-container.small #linkedin-icon {
+  top: 10px;
+}
+
 /*# sourceMappingURL=Home.css.map */

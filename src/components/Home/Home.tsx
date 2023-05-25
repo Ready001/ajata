@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { scrollTo } from "../../utils/scrollAnimation";
+import { FaLinkedin } from 'react-icons/fa';
 
 import Intro from "../Intro/Intro";
 import "./Home.css";
@@ -70,6 +71,7 @@ function Home() {
                 </a>
               </li>
             </ul>
+            <FaLinkedin id="linkedin-icon" onClick={() => window.open("https://www.linkedin.com/in/ajatareddy/", "_blank")}/>
           </nav>
         </div>
       </header>
