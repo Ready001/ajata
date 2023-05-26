@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 
 import "./Education.css";
 
@@ -121,6 +121,7 @@ function Education() {
           <img
             src={process.env.PUBLIC_URL + "/uiuc_logo.jpg"}
             className="company-logo"
+            alt="Logo of the University of Illinois at Urbana-Champaign"
           />
           <div className="entry-title">
             <h2>University of Illinois at Urbana-Champaign</h2>
@@ -133,7 +134,7 @@ function Education() {
             {classes_list.map((c, index) => {
               return (
                 <div
-                  className={"class " + (index % 2 == 0 ? "blue" : "orange")}
+                  className={"class " + (index % 2 === 0 ? "blue" : "orange")}
                   style={{ backgroundColor: colors[index % 2] }}
                   onClick={() => goToLink(c.classLink)}
                 >

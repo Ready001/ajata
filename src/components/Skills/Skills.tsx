@@ -8,37 +8,37 @@ function Skills() {
   const [skills, setSkills] = useState(skills_full);
 
   const [langSkills, setLangSkills] = useState(
-    skills_full.filter((skill) => skill.category == Categories.languages)
+    skills_full.filter((skill) => skill.category === Categories.languages)
   );
 
   const [cloudSkills, setCloudSkills] = useState(
-    skills_full.filter((skill) => skill.category == Categories.cloud)
+    skills_full.filter((skill) => skill.category === Categories.cloud)
   );
 
   const [dbSkills, setDbSkills] = useState(
-    skills_full.filter((skill) => skill.category == Categories.db)
+    skills_full.filter((skill) => skill.category === Categories.db)
   );
 
   const [libSkills, setLibSkills] = useState(
-    skills_full.filter((skill) => skill.category == Categories.lib)
+    skills_full.filter((skill) => skill.category === Categories.lib)
   );
 
   const [otherSkills, setOtherSkills] = useState(
-    skills_full.filter((skill) => skill.category == Categories.other)
+    skills_full.filter((skill) => skill.category === Categories.other)
   );
 
   //update per category states when all skills state updates
   useEffect(() => {
     setLangSkills(
-      skills.filter((skill) => skill.category == Categories.languages)
+      skills.filter((skill) => skill.category === Categories.languages)
     );
     setCloudSkills(
-      skills.filter((skill) => skill.category == Categories.cloud)
+      skills.filter((skill) => skill.category === Categories.cloud)
     );
-    setDbSkills(skills.filter((skill) => skill.category == Categories.db));
-    setLibSkills(skills.filter((skill) => skill.category == Categories.lib));
+    setDbSkills(skills.filter((skill) => skill.category === Categories.db));
+    setLibSkills(skills.filter((skill) => skill.category === Categories.lib));
     setOtherSkills(
-      skills.filter((skill) => skill.category == Categories.other)
+      skills.filter((skill) => skill.category === Categories.other)
     );
   }, [skills]);
 

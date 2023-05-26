@@ -1,12 +1,11 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 
 import TimelineObserver from "react-timeline-animation";
 
 import "./Experience.css";
-import amazonLogo from "../../../public/amazon_logo.jpg";
 
 type TimelineProps = {
-  setObserver: any;
+  setObserver: ((ref: any) => void) | undefined;
   className: string;
 };
 
@@ -20,6 +19,7 @@ const Timeline: React.FunctionComponent<TimelineProps> = ({ setObserver }) => {
   const circleStart = useRef(null);
 
   useEffect(() => {
+    if (setObserver){
     setObserver(timeline1.current);
     setObserver(timeline2.current);
     setObserver(timeline3.current);
@@ -27,6 +27,7 @@ const Timeline: React.FunctionComponent<TimelineProps> = ({ setObserver }) => {
     setObserver(circle2.current);
     setObserver(circle3.current);
     setObserver(circleStart.current);
+    } //eslint-disable-next-line
   }, []);
 
   return (
@@ -76,6 +77,7 @@ function Experience() {
               <img
                 src={process.env.PUBLIC_URL + "/amazon_logo.jpg"}
                 className="company-logo"
+                alt="Logo of Amazon"
               />
               <div className="entry-title">
                 <h2>Software Development Engineer Intern</h2>
@@ -108,6 +110,7 @@ function Experience() {
               <img
                 src={process.env.PUBLIC_URL + "/abbvie_logo.jpg"}
                 className="company-logo"
+                alt="Logo of AbbVie"
               />
               <div className="entry-title">
                 <h2>Web Developer/UX Design Intern</h2>
@@ -140,6 +143,7 @@ function Experience() {
               <img
                 src={process.env.PUBLIC_URL + "/unt_logo.jpg"}
                 className="company-logo"
+                alt="Logo of the University of North Texas"
               />
               <div className="entry-title">
                 <h2>Undergrad Research Assistant</h2>

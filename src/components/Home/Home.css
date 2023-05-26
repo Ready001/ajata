@@ -4,13 +4,20 @@ body {
   min-height: 100%;
 }
 
-a {
+button {
+  all: unset;
   text-decoration: none;
   color: #fff;
+  background-color: transparent;
+  border: 2px transparent;
 }
 
-a.active {
-  border-bottom: 4px solid rgba(133, 194, 255, 0.7960784314);
+button.active {
+  border-bottom: 4px solid rgba(133, 194, 255, 0.7960784314) !important;
+}
+
+button:focus {
+  border: 2px solid;
 }
 
 .header {
@@ -37,6 +44,7 @@ a.active {
   height: 100%;
   font-size: 7rem;
   text-align: center;
+  color: white;
   line-height: 40px;
   -ms-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -53,7 +61,7 @@ a.active {
   display: flex;
   justify-content: center;
   align-content: center;
-  padding-top: 15px;
+  padding-top: 0;
   transform: translateY(1rem);
 }
 
@@ -90,7 +98,7 @@ nav ul li {
   margin: 0 10px;
 }
 
-nav ul li a {
+nav ul li button {
   padding: 10px 0;
   color: #fff;
   font-size: 1.2rem;
@@ -100,7 +108,7 @@ nav ul li a {
   cursor: default;
 }
 
-nav ul li a:hover {
+nav ul li button:hover {
   color: #85c2ff;
 }
 
@@ -145,25 +153,6 @@ section:nth-child(odd) {
   text-align: center;
   margin-bottom: 5rem;
   font-size: 3rem;
-}
-
-#linkedin-icon {
-  padding: 20px;
-  position: absolute;
-  right: 10px;
-  top: 0;
-  font-size: 1.5rem;
-  color: #0077bf;
-  z-index: 3;
-  cursor: pointer;
-}
-
-#linkedin-icon:hover {
-  color: #0A66C2;
-}
-
-#navbar-container.small #linkedin-icon {
-  top: 10px;
 }
 
 /*# sourceMappingURL=Home.css.map */

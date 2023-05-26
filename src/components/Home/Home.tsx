@@ -1,6 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { scrollTo } from "../../utils/scrollAnimation";
-import { FaLinkedin } from 'react-icons/fa';
 
 import Intro from "../Intro/Intro";
 import "./Home.css";
@@ -40,38 +39,48 @@ function Home() {
     <div>
       <header>
         <div className={navClass} id="navbar-container">
-          <h1>
-            <a>Ajata Reddy</a>
-          </h1>
+          <h1>Ajata Reddy</h1>
           <nav>
             <ul>
               <li>
-                <a className={section1_class} onClick={() => scrollTo("1")}>
+                <button className={section1_class} onClick={() => scrollTo("1")}>
                   About me
-                </a>
+                </button>
               </li>
               <li>
-                <a className={section2_class} onClick={() => scrollTo("2")}>
+                <button className={section2_class} onClick={() => scrollTo("2")}>
                   Experience
-                </a>
+                </button>
               </li>
               <li>
-                <a className={section3_class} onClick={() => scrollTo("3")}>
+                <button className={section3_class} onClick={() => scrollTo("3")}>
                   Education
-                </a>
+                </button>
               </li>
               <li>
-                <a className={section4_class} onClick={() => scrollTo("4")}>
+                <button className={section4_class} onClick={() => scrollTo("4")}>
                   Projects
-                </a>
+                </button>
               </li>
               <li>
-                <a className={section5_class} onClick={() => scrollTo("5")}>
+                <button className={section5_class} onClick={() => scrollTo("5")}>
                   Skills
-                </a>
+                </button>
+              </li>
+              <li>
+                <button
+                  className={section5_class}
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/ajatareddy/",
+                      "_blank"
+                    )
+                  }
+                >
+                  Contact
+                </button>
               </li>
             </ul>
-            <FaLinkedin id="linkedin-icon" onClick={() => window.open("https://www.linkedin.com/in/ajatareddy/", "_blank")}/>
           </nav>
         </div>
       </header>
