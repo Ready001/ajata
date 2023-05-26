@@ -13,7 +13,7 @@
   cursor: pointer;
 }
 
-.projects-navlink:hover {
+.projects-navlink:hover, .projects-navlink:focus {
   background-color: #fff5ef;
   color: #9b9e9f;
   border-color: #eff1ff;

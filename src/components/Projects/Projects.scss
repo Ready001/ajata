@@ -23,7 +23,7 @@ $shade-dark: #3c3e40;
 
 }
 
-.projects-navlink:hover {
+.projects-navlink:hover,  .projects-navlink:focus    {
     background-color: $complementary-peach;
     color: $tone-dark;
     border-color: $analogous-purple;

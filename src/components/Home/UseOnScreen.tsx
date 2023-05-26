@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { useState, useEffect } from "react";
 
 export default function useOnScreen(section: React.MutableRefObject<HTMLElement>) {
