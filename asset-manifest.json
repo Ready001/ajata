@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/ajata/static/css/main.6d535c21.css",
-    "main.js": "/ajata/static/js/main.fbad6785.js",
+    "main.css": "/ajata/static/css/main.503db2b4.css",
+    "main.js": "/ajata/static/js/main.c15f0d85.js",
     "index.html": "/ajata/index.html",
-    "main.6d535c21.css.map": "/ajata/static/css/main.6d535c21.css.map",
-    "main.fbad6785.js.map": "/ajata/static/js/main.fbad6785.js.map"
+    "main.503db2b4.css.map": "/ajata/static/css/main.503db2b4.css.map",
+    "main.c15f0d85.js.map": "/ajata/static/js/main.c15f0d85.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d535c21.css",
-    "static/js/main.fbad6785.js"
+    "static/css/main.503db2b4.css",
+    "static/js/main.c15f0d85.js"
   ]
 }
