@@ -45,7 +45,7 @@ function Projects() {
               )
             }
           >
-            CoderConnect
+            CoderConnect - Volunteer Tutoring Website
           </h4>
           <h5 className="skills-used">
             <span>ReactJS</span>
@@ -60,13 +60,21 @@ function Projects() {
           </h5>
           <ul>
             <li>
-              CoderConnect is a volunteer tutoring website for students who wish
-              to learn to program.
+              Developed and launched CoderConnect, a responsive volunteer
+              tutoring website for students.
             </li>
-            <li>Managed integration of front-end and back-end.</li>
             <li>
-              Made site highly responsive and improved UX while working in an
-              agile environment.
+              Utilized MERN stack (MongoDB, Express.js, React.js, Node.js) for
+              seamless front-end and back-end integration.
+            </li>
+            <li>
+              Created a user-friendly interface, allowing students to easily
+              connect with volunteer tutors for personalized programming
+              guidance.
+            </li>
+            <li>
+              Collaborated with a team of developers to coordinate efforts and
+              streamline development processes.
             </li>
           </ul>
         </div>
@@ -85,7 +93,7 @@ function Projects() {
               )
             }
           >
-            Playback
+            Playback - Video Feedback Platform
           </h4>
           <h5 className="skills-used">
             <span>Firebase</span>
@@ -98,10 +106,22 @@ function Projects() {
           </h5>
           <ul>
             <li>
-              Playback helps people give music students feedback in an
-              asynchronous virtual way.
+              Developed and launched Playback, a web platform where users can
+              submit videos and receive feedback at specific timestamps.
             </li>
-            <li>Utilized Firebase for database and Google OAuth.</li>
+            <li>
+              Designed with a focus on facilitating asynchronous feedback for
+              music students during the COVID-19 pandemic.
+            </li>
+            <li>
+              Implemented intuitive features allowing users to upload videos and
+              receive targeted feedback from peers or teachers.
+            </li>
+            <li>
+              Enabled timestamp-based commenting system, streamlining the
+              feedback process by providing precise feedback at specific
+              moments.
+            </li>
           </ul>
         </div>
 
@@ -114,7 +134,9 @@ function Projects() {
             />
           </div>
           <div className="project-card-inner">
-            <h4 className="project-title">Uni News</h4>
+            <h4 className="project-title">
+              UniNews - University News Aggregation Website
+            </h4>
             <h5 className="skills-used">
               <span>ReactJS</span>
               <span>&bull;</span>
@@ -127,17 +149,26 @@ function Projects() {
 
             <ul>
               <li>
-                An aggregate news site that scrapes multiple university news
-                sites to provide users with the latest news related to the
-                universities they subscribe to.
+                Developed and launched UniNews, an aggregate news site that
+                collects and presents the latest news from multiple university
+                sources.
               </li>
               <li>
-                Created a{" "}
+                Designed and implemented a{" "}
                 <a href="https://github.com/Ready001/UniNewsScraper">
                   web scraper REST API
                 </a>{" "}
-                to provide Uni News with the latest articles from multiple
-                university news websites.
+                to fetch and consolidate news articles from various university
+                news websites.
+              </li>
+              <li>
+                Implemented a user subscription system, allowing users to
+                customize their news feed based on the universities they are
+                interested in.
+              </li>
+              <li>
+                Implemented search and filtering functionality to enable users
+                to find specific news articles or topics of interest.
               </li>
             </ul>
           </div>
@@ -155,7 +186,7 @@ function Projects() {
               window.open("https://github.com/Ready001/ajata", "_blank")
             }
           >
-            My Personal Site
+            My Portfolio Site
           </h4>
           <h5 className="skills-used">
             <span>React</span>
@@ -168,12 +199,23 @@ function Projects() {
           </h5>
 
           <ul>
-            <li>This website you are on right now.</li>
-            <li>Used React, Node, and Typescript.</li>
             <li>
-              Implemented search functionality for skills section that also
-              looks at related words (e.g. searching for "java" also shows its
-              libraries and frameworks).
+              Developed and launched this website you are on right now, a
+              responsive website showcasing my portfolio and skills.
+            </li>
+            <li>
+              Implemented intelligent filter algorithms in the skills section
+              that consider related words, enabling users to find relevant
+              skills beyond exact matches.
+            </li>
+            <li>
+              An example of this filtering algorithm is searching for "java"
+              also shows its libraries and frameworks. You could also search for
+              topics like computer vision and get related skills.
+            </li>
+            <li>
+              Implemented interactive features and animations to enhance user
+              engagement and visual appeal.
             </li>
           </ul>
         </div>
@@ -194,10 +236,17 @@ function Projects() {
             <h5 className="skills-used">Python &nbsp; &bull; &nbsp; Pygame</h5>
             <ul>
               <li>
-                Made an AI agent to play snake based on the Q-learning
-                algorithm.
+                Developed an AI agent using the Q-learning algorithm to play the
+                classic Snake game.
               </li>
-              <li>Utilized Pygame for the graphical elements.</li>
+              <li>
+                Implemented the Q-learning algorithm to enable the AI agent to
+                learn and make decisions based on rewards and penalties.
+              </li>
+              <li>
+                Conducted extensive experimentation and fine-tuning of the
+                Q-learning parameters to enhance the AI agent's performance.
+              </li>
             </ul>
           </div>
         </div>
@@ -223,12 +272,18 @@ function Projects() {
 
             <ul>
               <li>
-                Performed sentiment analysis on movie reviews using both a CNN
-                and a naive bayes unigram/bigram mixture model.
+                Conducted sentiment analysis on movie reviews using two
+                different models: a Convolutional Neural Network (CNN) and a
+                naive Bayes unigram/bigram mixture model.
               </li>
               <li>
                 Employed PyTorch for the Convolutional Neural Network (CNN)
                 Model and made the unigram/bigram mixture model from scratch.
+              </li>
+              <li>
+                Constructed the unigram/bigram mixture model, combining unigrams
+                and bigrams to capture contextual information for sentiment
+                classification.
               </li>
             </ul>
           </div>
@@ -248,9 +303,9 @@ function Projects() {
 
             <ul>
               <li>
-                Utilized OpenAI's{" "}
-                <a href="https://github.com/OpenAI/CLIP">CLIP</a> neural network
-                to determine flower type from images.
+                Developed a flower type classification system using OpenAI's{" "}
+                <a href="https://github.com/OpenAI/CLIP">CLIP</a> neural
+                network.
               </li>
             </ul>
           </div>
@@ -274,11 +329,20 @@ function Projects() {
 
             <ul>
               <li>
-                Built a neural transition-based dependency parser based on the
-                paper{" "}
+                Implemented a neural transition-based dependency parser based on
+                the paper{" "}
                 <a href="https://nlp.stanford.edu/pubs/emnlp2014-depparser.pdf">
                   A Fast and Accurate Dependency Parser using Neural Networks
                 </a>
+              </li>
+              <li>
+                Studied and analyzed the research paper to understand the
+                underlying concepts and algorithms.
+              </li>
+              <li>
+                Developed the neural transition-based dependency parser from
+                scratch, following the methodology and architecture outlined in
+                the paper.
               </li>
             </ul>
           </div>
@@ -305,8 +369,9 @@ function Projects() {
                 WikiText-2, a corpus of wikipedia articles.
               </li>
               <li>
-                Used a context of 4 words (the previous 2 words and the next 2
-                words)
+                Designed a context window of 4 words, considering the previous 2
+                words and the next 2 words as the context for generating
+                embeddings.
               </li>
             </ul>
           </div>
@@ -327,8 +392,12 @@ function Projects() {
             </h5>
             <ul>
               <li>
-                Created a Hidden Markov Model (HMM) using the Viterbi algorithm
-                for part of speech (POS) tagging.
+                Developed a Hidden Markov Model (HMM) for part-of-speech (POS)
+                tagging.
+              </li>
+              <li>
+                Implemented the Viterbi algorithm to efficiently compute the
+                most probable sequence of POS tags given an input sentence.
               </li>
             </ul>
           </div>
@@ -346,7 +415,7 @@ function Projects() {
             alt="login screen from an Android Studio simulation"
           />
           <div className="project-card-inner">
-            <h4 className="project-title">Android Location App</h4>
+            <h4 className="project-title">Android Location Info App</h4>
             <h5 className="skills-used">
               <span>Java</span>
               <span>&bull;</span>
@@ -354,13 +423,22 @@ function Projects() {
             </h5>
             <ul>
               <li>
-                An app which combines Google Maps API and OpenWeather API to
-                give detailed information about a set of locations the user has
-                added
+                Developed an app that integrates Google Maps API and OpenWeather
+                API to provide detailed information about user-defined
+                locations.
               </li>
               <li>
-                Utilized Espresso and JUnit to make a comprehensive test suite
-                with instrumented tests, unit tests, mock tests, and more.
+                Created a comprehensive test suite using Espresso and JUnit,
+                incorporating instrumented tests, unit tests, and mock tests to
+                ensure robust and reliable functionality.
+              </li>
+              <li>
+                Employed Agile methodologies for effective project management,
+                ensuring timely feature delivery and iterative development.
+              </li>
+              <li>
+                Followed best practices for code quality, maintainability, and
+                performance optimization throughout the development lifecycle.
               </li>
             </ul>
           </div>

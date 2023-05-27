@@ -19,14 +19,14 @@ const Timeline: React.FunctionComponent<TimelineProps> = ({ setObserver }) => {
   const circleStart = useRef(null);
 
   useEffect(() => {
-    if (setObserver){
-    setObserver(timeline1.current);
-    setObserver(timeline2.current);
-    setObserver(timeline3.current);
-    setObserver(circle1.current);
-    setObserver(circle2.current);
-    setObserver(circle3.current);
-    setObserver(circleStart.current);
+    if (setObserver) {
+      setObserver(timeline1.current);
+      setObserver(timeline2.current);
+      setObserver(timeline3.current);
+      setObserver(circle1.current);
+      setObserver(circle2.current);
+      setObserver(circle3.current);
+      setObserver(circleStart.current);
     } //eslint-disable-next-line
   }, []);
 
@@ -88,17 +88,25 @@ function Experience() {
             <div className="entry-content">
               <ul className="summary-list">
                 <li>
-                  Designed scalable algorithm using <b>Java</b> to detect spikes
-                  in app crashes and handle signal processing noise
+                  Designed and implemented a scalable algorithm using{" "}
+                  <b>Java</b> to detect spikes in app crashes, enhancing the
+                  company's ability to identify critical issues promptly.
                 </li>
                 <li>
-                  Determined causes of spikes with <b>AWS Lambda</b> to send
-                  notifications to internal teams, significantly reducing time
-                  to fix crash causes
+                  Utilized <b>AWS Lambda</b> to analyze crash data and determine
+                  the causes of spikes, resulting in efficient notification
+                  delivery to internal teams.
                 </li>
                 <li>
-                  Wrote script to send mock data from <b>EC2</b> to{" "}
-                  <b>DynamoDB</b> for extensive test coverage
+                  Developed a script to generate and send mock data from{" "}
+                  <b>EC2</b> instances to <b>DynamoDB</b>, ensuring
+                  comprehensive test coverage and validating the system's
+                  performance under various scenarios.
+                </li>
+                <li>
+                  Documented the design, implementation details, and usage
+                  instructions for the developed features, facilitating
+                  knowledge sharing and future maintenance.
                 </li>
               </ul>
             </div>
@@ -121,17 +129,24 @@ function Experience() {
             <div className="entry-content">
               <ul className="summary-list">
                 <li>
-                  Create full stack web app using <b>Spring</b> and{" "}
-                  <b>React.js</b> to allow employees to interact with internal
-                  health study data in a user friendly design.
+                  Developed a full-stack web application using <b>Spring</b> and
+                  React.js, providing employees with an intuitive interface to
+                  interact with internal data.
                 </li>
                 <li>
-                  Connected app to 20 GB <b>MySQL</b> database of scientific
-                  data, displaying the data in an intuitive interface.
+                  Successfully connected the web application to a large MySQL
+                  database containing scientific data, enabling seamless data
+                  retrieval and display.
                 </li>
                 <li>
-                  Significantly improved data loading speeds from legacy app,
-                  saving time for users.
+                  Designed a user-friendly interface, prioritizing ease of use
+                  and ensuring employees can efficiently access and analyze the
+                  data.
+                </li>
+                <li>
+                  Implemented optimizations to significantly improve data
+                  loading speeds compared to the legacy application, enhancing
+                  user productivity and saving valuable time.
                 </li>
               </ul>
             </div>
@@ -156,21 +171,16 @@ function Experience() {
             <div className="entry-content">
               <ul className="summary-list">
                 <li>
-                  Worked on Reading with Robots, part of a larger project called
-                  Companionbots that aims to help the elderly and those who
-                  suffer the depression through dialoguing. Reading with Robots
-                  uses <b>NLP</b>, <b>ML</b>, and an <b>EEG</b> to train a robot
-                  to read with the elderly person and ask questions provoking
-                  deep thought about the text.
+                Contributed to the "Reading with Robots" project, a part of the larger Companionbots initiative aimed at assisting the elderly and individuals suffering from depression through dialogue-based interactions.
                 </li>
                 <li>
-                  Used E-Prime, a programming language tailored for computerized
-                  experiments and MATLAB.
+                Employed an EEG (Electroencephalography) to capture brain activity during the question sessions, further enhancing the understanding of cognitive responses.
                 </li>
+                <li>Utilized E-Prime, a specialized programming language for computerized experiments, to develop the experimental framework for the EEG.</li>
                 <li>
-                  Presented research at the “Enabling Health Technologies”
-                  workshop.
+                Presented the research findings at the "Enabling Health Technologies" workshop, sharing insights and contributing to the academic discourse in the field.
                 </li>
+                <li>Contributed to the advancement of the Companionbots project and gained valuable research experience in the field of human-robot interaction and cognitive psychology.</li>
               </ul>
             </div>
           </div>

@@ -69,7 +69,6 @@ function Home() {
               </li>
               <li>
                 <button
-                  className={section5_class}
                   onClick={() =>
                     window.open(
                       "https://www.linkedin.com/in/ajatareddy/",

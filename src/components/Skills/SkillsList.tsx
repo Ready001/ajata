@@ -25,7 +25,7 @@ export const skills_full: Array<skill_entry> = [
     category: Categories.lib,
   },
   {
-    name: "Torch",
+    name: "PyTorch",
     related: [
       "python",
       "AI",
