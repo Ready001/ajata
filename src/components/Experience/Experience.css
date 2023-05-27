@@ -81,6 +81,9 @@
 
 .entry-content {
   height: 21.5em;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
 }
 
 .summary-list {

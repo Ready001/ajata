@@ -1,3 +1,6 @@
+$breakpoint-phone: 640px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
 
 #whole-container {
     display: flex;
@@ -12,7 +15,17 @@
 }
 
 .about {
-    font-size: 1.2rem;
+    font-size: 2em;
     margin: 0rem 2rem;
     text-align: center;
 }
+
+@media (max-width: $breakpoint-phone) {
+    #greetings {
+        font-size: 2rem;
+    }
+
+    .about {
+        font-size: 2rem;
+    }
+  }

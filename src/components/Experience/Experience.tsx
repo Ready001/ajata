@@ -85,7 +85,7 @@ function Experience() {
               </div>
             </div>
 
-            <p className="entry-content">
+            <div className="entry-content">
               <ul className="summary-list">
                 <li>
                   Designed scalable algorithm using <b>Java</b> to detect spikes
@@ -101,7 +101,7 @@ function Experience() {
                   <b>DynamoDB</b> for extensive test coverage
                 </li>
               </ul>
-            </p>
+            </div>
           </div>
 
           {/* abbvie */}
@@ -118,7 +118,7 @@ function Experience() {
               </div>
             </div>
 
-            <p className="entry-content">
+            <div className="entry-content">
               <ul className="summary-list">
                 <li>
                   Create full stack web app using <b>Spring</b> and{" "}
@@ -134,7 +134,7 @@ function Experience() {
                   saving time for users.
                 </li>
               </ul>
-            </p>
+            </div>
           </div>
 
           {/* unt */}
@@ -153,7 +153,7 @@ function Experience() {
               </div>
             </div>
 
-            <p className="entry-content">
+            <div className="entry-content">
               <ul className="summary-list">
                 <li>
                   Worked on Reading with Robots, part of a larger project called
@@ -172,7 +172,7 @@ function Experience() {
                   workshop.
                 </li>
               </ul>
-            </p>
+            </div>
           </div>
         </div>
       </div>

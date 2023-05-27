@@ -101,9 +101,6 @@ const classes_list: Array<class_obj> = [
     className: "Statistics and Probability",
     classLink: "https://courses.illinois.edu/schedule/2022/spring/STAT/400",
   },
-
-  
-  
 ];
 
 const colors: Array<string> = ["#13294Bd9", "#E84A27f0"];
@@ -134,12 +131,18 @@ function Education() {
             {classes_list.map((c, index) => {
               return (
                 <div
+                  key={c.classLink}
                   className={"class " + (index % 2 === 0 ? "blue" : "orange")}
                   style={{ backgroundColor: colors[index % 2] }}
                   onClick={() => goToLink(c.classLink)}
                 >
-                  <span className="classId">{c.classId}</span>: &nbsp;
-                  <span className="className">{c.className}</span>
+                  <span key={c.classId} className="classId">
+                    {c.classId}
+                  </span>
+                  : &nbsp;
+                  <span key={c.className} className="className">
+                    {c.className}
+                  </span>
                 </div>
               );
             })}

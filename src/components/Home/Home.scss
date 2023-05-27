@@ -1,3 +1,7 @@
+$breakpoint-phone: 640px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
 html,
 body {
   height: 100%;
@@ -9,6 +13,7 @@ button {
   color: #fff;
   background-color: transparent;
   border: 2px transparent;
+  margin-bottom: 1px;
 }
 
 button.active {
@@ -141,4 +146,21 @@ section:nth-child(odd) {
   text-align: center;
   margin-bottom: 5rem;
   font-size: 3rem;
+}
+
+@media (max-width: $breakpoint-phone) {
+  #navbar-container h1 {
+    font-size: 4rem;
+    padding: 19rem 0;
+  }
+
+  #navbar-container.small h1 {
+    visibility: hidden;
+  }
+
+  #navbar-container.small nav ul li button{
+    font-size: .8em;
+  }
+
+
 }

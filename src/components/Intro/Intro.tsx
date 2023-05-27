@@ -15,8 +15,6 @@ class Intro extends React.Component<IntroProps, IntroState> {
         <h4 className="about">
           <TypeAnimation
             sequence={[
-              "A CS",
-              300,
               "A Computer Science Major at UIUC",
               1000,
               "A Computer Science Major at the Univerist",
@@ -24,7 +22,24 @@ class Intro extends React.Component<IntroProps, IntroState> {
               "A Computer Science Major at the University of Illinois at Urbana-Champaign",
               ]}
             speed={60}
-            style={{ fontSize: "2em" }}
+          />
+          <br/>
+          <br/>
+          <TypeAnimation
+            sequence={
+              [
+              5000,
+              "I enjoy hiking",
+              1000,
+              "I enjoy reading",
+              1000,
+              "I enjoy rock climbing",
+              1000,
+              "I enjoy cooking",
+              ]}
+            speed={40}
+            cursor={false}
+            repeat={Infinity}
           />
         </h4>
       </div>

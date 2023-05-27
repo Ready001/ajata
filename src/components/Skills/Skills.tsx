@@ -92,7 +92,7 @@ function Skills() {
           )}
           <div className="category-skills">
             {langSkills.map((skill) => {
-              return <SkillCard skillName={skill.name} />;
+              return <SkillCard skillName={skill.name} key={skill.name}/>;
             })}
           </div>
           {cloudSkills.length > 0 && (
@@ -100,7 +100,7 @@ function Skills() {
           )}
           <div className="category-skills">
             {cloudSkills.map((skill) => {
-              return <SkillCard skillName={skill.name} />;
+              return <SkillCard skillName={skill.name} key={skill.name}/>;
             })}
           </div>
           {dbSkills.length > 0 && (
@@ -108,7 +108,7 @@ function Skills() {
           )}
           <div className="category-skills">
             {dbSkills.map((skill) => {
-              return <SkillCard skillName={skill.name} />;
+              return <SkillCard skillName={skill.name} key={skill.name} />;
             })}
           </div>
           {libSkills.length > 0 && (
@@ -116,7 +116,7 @@ function Skills() {
           )}{" "}
           <div className="category-skills">
             {libSkills.map((skill) => {
-              return <SkillCard skillName={skill.name} />;
+              return <SkillCard skillName={skill.name} key={skill.name}/>;
             })}
           </div>
           {otherSkills.length > 0 && (
@@ -124,7 +124,7 @@ function Skills() {
           )}
           <div className="category-skills">
             {otherSkills.map((skill) => {
-              return <SkillCard skillName={skill.name} />;
+              return <SkillCard skillName={skill.name} key={skill.name}/>;
             })}
           </div>
         </div>
