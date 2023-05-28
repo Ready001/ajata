@@ -75,7 +75,7 @@ function Experience() {
           <div className="entry">
             <div className="entry-title-container">
               <img
-                src={process.env.PUBLIC_URL + "/amazon_logo.jpg"}
+                src={process.env.PUBLIC_URL + "/amazon_logo.webp"}
                 className="company-logo"
                 alt="Logo of Amazon"
               />
@@ -116,7 +116,7 @@ function Experience() {
           <div className="entry">
             <div className="entry-title-container">
               <img
-                src={process.env.PUBLIC_URL + "/abbvie_logo.jpg"}
+                src={process.env.PUBLIC_URL + "/abbvie_logo.webp"}
                 className="company-logo"
                 alt="Logo of AbbVie"
               />
@@ -156,7 +156,7 @@ function Experience() {
           <div className="entry">
             <div className="entry-title-container">
               <img
-                src={process.env.PUBLIC_URL + "/unt_logo.jpg"}
+                src={process.env.PUBLIC_URL + "/unt_logo.webp"}
                 className="company-logo"
                 alt="Logo of the University of North Texas"
               />

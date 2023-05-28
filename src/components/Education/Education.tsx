@@ -116,7 +116,7 @@ function Education() {
       <div className="education-container">
         <div className="uiuc-card">
           <img
-            src={process.env.PUBLIC_URL + "/uiuc_logo.jpg"}
+            src={process.env.PUBLIC_URL + "/uiuc_logo.webp"}
             className="company-logo"
             alt="Logo of the University of Illinois at Urbana-Champaign"
           />
