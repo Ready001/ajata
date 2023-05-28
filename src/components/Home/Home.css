@@ -156,7 +156,7 @@ section:nth-child(odd) {
   font-size: 3rem;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   #navbar-container h1 {
     font-size: 4rem;
     padding: 19rem 0;
