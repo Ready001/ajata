@@ -27,7 +27,7 @@ function Skills() {
     skills_full.filter((skill) => skill.category === Categories.other)
   );
 
-  //update per category states when all skills state updates
+  //update per category states when state for all skills updates
   useEffect(() => {
     setLangSkills(
       skills.filter((skill) => skill.category === Categories.languages)
@@ -42,19 +42,23 @@ function Skills() {
     );
   }, [skills]);
 
-  const handleChange = (e: any) => {
+  //called when input in the search bar changes
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
     filterSkills(e.target.value.toLowerCase());
   };
 
+  //filters skills in a way that the skills closely related to the input are listed first and the loosely related skills are listed after.
   const filterSkills = (searchInput: string) => {
     var filtered_skills: Array<skill_entry> = [];
+    //populate filtered_skills array with closely related skills
     skills_full.forEach((skill) => {
       if (skill.name.toLowerCase().includes(searchInput)) {
         filtered_skills.push(skill);
       }
     });
 
+    //populate filtered_skills array with loosely related skills
     skills_full.forEach((skill) => {
       if (!filtered_skills.includes(skill)) {
         if (
@@ -70,7 +74,6 @@ function Skills() {
     });
 
     setSkills(filtered_skills);
-    return "updated";
   };
 
   return (
