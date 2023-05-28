@@ -225,10 +225,13 @@ function Projects() {
 
         <div className="project-card-left project-card">
           <div className="project-card-inner">
-            <img
+            <video
               className="project-img left-img"
-              src={process.env.PUBLIC_URL + "/project_imgs/snake.gif"}
-              alt="Gif of the AI playing Snake"
+              src={process.env.PUBLIC_URL + "/project_imgs/snake.webm"}
+              title="Video of the AI playing Snake"
+              autoPlay
+              loop
+              muted
             />
           </div>
           <div className="project-card-inner">
@@ -260,10 +263,13 @@ function Projects() {
               }
               alt="The CNN"
             />
-            <img
+            <video
               className="project-img left-img"
-              src={process.env.PUBLIC_URL + "/project_imgs/bigram.gif"}
-              alt="Gif of the unigram/bigram code running and resulting accuracy scores"
+              src={process.env.PUBLIC_URL + "/project_imgs/bigram.webm"}
+              title="Video of the unigram/bigram code running and resulting accuracy scores"
+              autoPlay
+              loop
+              muted
             />
           </div>
           <div className="project-card-inner">
@@ -379,10 +385,13 @@ function Projects() {
 
         <div className="project-card project-card-left">
           <div className="project-card-inner">
-            <img
+            <video
               className="project-img left-img"
-              src={process.env.PUBLIC_URL + "/project_imgs/viterbi.gif"}
-              alt="gif of the code running"
+              src={process.env.PUBLIC_URL + "/project_imgs/viterbi.webm"}
+              title="Video of the code running"
+              autoPlay
+              loop
+              muted
             />
           </div>
           <div className="project-card-inner">
