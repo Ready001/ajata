@@ -210,7 +210,7 @@ function Projects() {
             </li>
             <li>
               An example of this filtering algorithm is searching for "java"
-              also shows its libraries and frameworks. You could also search for
+              also shows its libraries and frameworks. You can also search for
               topics like computer vision and get related skills.
             </li>
             <li>
