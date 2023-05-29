@@ -1,30 +1,30 @@
 import React, { useEffect, useState } from "react";
 
-import { skills_full, skill_entry, Categories } from "./SkillsList";
+import { skillsFull, skillEntry, Categories } from "./SkillsList";
 import "./Skills.css";
 
 function Skills() {
   //states
-  const [skills, setSkills] = useState(skills_full);
+  const [skills, setSkills] = useState(skillsFull);
 
   const [langSkills, setLangSkills] = useState(
-    skills_full.filter((skill) => skill.category === Categories.languages)
+    skillsFull.filter((skill) => skill.category === Categories.languages)
   );
 
   const [cloudSkills, setCloudSkills] = useState(
-    skills_full.filter((skill) => skill.category === Categories.cloud)
+    skillsFull.filter((skill) => skill.category === Categories.cloud)
   );
 
   const [dbSkills, setDbSkills] = useState(
-    skills_full.filter((skill) => skill.category === Categories.db)
+    skillsFull.filter((skill) => skill.category === Categories.db)
   );
 
   const [libSkills, setLibSkills] = useState(
-    skills_full.filter((skill) => skill.category === Categories.lib)
+    skillsFull.filter((skill) => skill.category === Categories.lib)
   );
 
   const [otherSkills, setOtherSkills] = useState(
-    skills_full.filter((skill) => skill.category === Categories.other)
+    skillsFull.filter((skill) => skill.category === Categories.other)
   );
 
   //update per category states when state for all skills updates
@@ -48,32 +48,18 @@ function Skills() {
     filterSkills(e.target.value.toLowerCase());
   };
 
-  //filters skills in a way that the skills closely related to the input are listed first and the loosely related skills are listed after.
+  //filters skills while considering both the skill's name and also related words
   const filterSkills = (searchInput: string) => {
-    var filtered_skills: Array<skill_entry> = [];
-    //populate filtered_skills array with closely related skills
-    skills_full.forEach((skill) => {
-      if (skill.name.toLowerCase().includes(searchInput)) {
-        filtered_skills.push(skill);
-      }
+    const filteredSkills = skillsFull.filter((skill) => {
+      const skillNameLower = skill.name.toLowerCase();
+      const searchInputLower = searchInput.toLowerCase();
+      const isMatch =
+        skillNameLower.includes(searchInputLower) ||
+        skill.related.some((x) => x.toLowerCase().includes(searchInputLower));
+      return isMatch;
     });
 
-    //populate filtered_skills array with loosely related skills
-    skills_full.forEach((skill) => {
-      if (!filtered_skills.includes(skill)) {
-        if (
-          skill.related.some(
-            (x) =>
-              x.toLowerCase().includes(searchInput.toLowerCase()) ||
-              searchInput.toLowerCase().includes(x.toLowerCase())
-          )
-        ) {
-          filtered_skills.push(skill);
-        }
-      }
-    });
-
-    setSkills(filtered_skills);
+    setSkills(filteredSkills);
   };
 
   return (
@@ -90,57 +76,42 @@ function Skills() {
         </div>
 
         <div className="skills-container">
-          {langSkills.length > 0 && (
-            <h4 className="category-title">{Categories.languages}</h4>
-          )}
-          <div className="category-skills">
-            {langSkills.map((skill) => {
-              return <SkillCard skillName={skill.name} key={skill.name}/>;
-            })}
-          </div>
-          {cloudSkills.length > 0 && (
-            <h4 className="category-title">{Categories.cloud}</h4>
-          )}
-          <div className="category-skills">
-            {cloudSkills.map((skill) => {
-              return <SkillCard skillName={skill.name} key={skill.name}/>;
-            })}
-          </div>
-          {dbSkills.length > 0 && (
-            <h4 className="category-title">{Categories.db}</h4>
-          )}
-          <div className="category-skills">
-            {dbSkills.map((skill) => {
-              return <SkillCard skillName={skill.name} key={skill.name} />;
-            })}
-          </div>
-          {libSkills.length > 0 && (
-            <h4 className="category-title">{Categories.lib}</h4>
-          )}{" "}
-          <div className="category-skills">
-            {libSkills.map((skill) => {
-              return <SkillCard skillName={skill.name} key={skill.name}/>;
-            })}
-          </div>
-          {otherSkills.length > 0 && (
-            <h4 className="category-title">{Categories.other}</h4>
-          )}
-          <div className="category-skills">
-            {otherSkills.map((skill) => {
-              return <SkillCard skillName={skill.name} key={skill.name}/>;
-            })}
-          </div>
+          {renderSkillsSection(langSkills, Categories.languages)}
+          {renderSkillsSection(cloudSkills, Categories.cloud)}
+          {renderSkillsSection(dbSkills, Categories.db)}
+          {renderSkillsSection(libSkills, Categories.lib)}
+          {renderSkillsSection(otherSkills, Categories.other)}
         </div>
       </div>
     </div>
   );
 }
 
-const SkillCard = (skillName: any) => {
+//renders individual skill
+const SkillCard = (skillObj: any) => {
   return (
     <div className="skill-card">
-      <p className="skill-name">{skillName.skillName}</p>
+      <p className="skill-name">{skillObj.skillName}</p>
     </div>
+  );
+};
+
+//renders an entire skill section
+const renderSkillsSection = (
+  categorySkills: Array<skillEntry>,
+  categoryTitle: string
+) => {
+  return (
+    <>
+      {categorySkills.length > 0 && (
+        <h4 className="category-title">{categoryTitle}</h4>
+      )}
+      <div className="category-skills">
+        {categorySkills.map((skill) => (
+          <SkillCard skillName={skill.name} key={skill.name} />
+        ))}
+      </div>
+    </>
   );
 };
 

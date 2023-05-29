@@ -1,4 +1,4 @@
-export type skill_entry = {
+export type skillEntry = {
   name: string;
   related: Array<string>;
   category: Categories;
@@ -12,7 +12,7 @@ export enum Categories {
   other = "Other",
 }
 
-export const skills_full: Array<skill_entry> = [
+export const skillsFull: Array<skillEntry> = [
   //python and useful libraries
   {
     name: "Python",
