@@ -20,6 +20,16 @@ export const skillsFull: Array<skillEntry> = [
     category: Categories.languages,
   },
   {
+    name: "PySpark",
+    related: ["python", "data", "spark", "pipelines"],
+    category: Categories.lib
+  },
+  {
+    name: "Apache Spark",
+    related: ["python", "data", "spark", "pipelines"],
+    category: Categories.lib
+  },
+  {
     name: "Numpy",
     related: ["python", "AI", "ML"],
     category: Categories.lib,
@@ -48,7 +58,7 @@ export const skillsFull: Array<skillEntry> = [
   },
   {
     name: "Pandas",
-    related: ["python", "AI", "ML"],
+    related: ["python", "AI", "ML", "data", "pipelines"],
     category: Categories.lib,
   },
   {
@@ -64,7 +74,7 @@ export const skillsFull: Array<skillEntry> = [
 
   //languages
   { name: "C", related: ["C++", "linux"], category: Categories.languages },
-  { name: "C++", related: [], category: Categories.languages },
+  { name: "C++", related: ["linux"], category: Categories.languages },
   { name: "Java", related: ["object"], category: Categories.languages },
   {
     name: "Javascript and Typescript",
@@ -87,6 +97,9 @@ export const skillsFull: Array<skillEntry> = [
   { name: "JQuery", related: ["web"], category: Categories.lib },
 
   //db
+  { name: "PostgreSQL", related: ["aws", "data", "sql", "relational", "warehouse"], category: Categories.db },
+  { name: "AWS Redshift", related: ["aws", "data", "sql", "relational", "postgresql", "warehouse"], category: Categories.db },
+  { name: "AWS S3 w/ Athena", related: ["aws", "data", "lake"], category: Categories.db },
   { name: "MongoDB", related: ["web", "cloud", "NoSQL"], category: Categories.db },
   { name: "AWS DynamoDB", related: ["cloud", "aws", "NoSQL"], category: Categories.db },
   { name: "MySQL", related: [], category: Categories.db },
@@ -96,6 +109,8 @@ export const skillsFull: Array<skillEntry> = [
   //cloud
   { name: "AWS EC2", related: ["cloud", "aws"], category: Categories.cloud },
   { name: "AWS Lambda", related: ["cloud", "aws"], category: Categories.cloud },
+  { name: "AWS Glue", related: ["cloud", "aws", "python", "data", "pipelines"], category: Categories.cloud },
+  { name: "AWS Step Functions", related: ["cloud", "aws"], category: Categories.cloud },
   {
     name: "AWS Timestream",
     related: ["cloud", "aws"],
@@ -115,15 +130,20 @@ export const skillsFull: Array<skillEntry> = [
     related: ["cloud", "google", "computer vision"],
     category: Categories.cloud,
   },
+  { name: "AWS Cloudwatch", related: ["aws", "log"], category: Categories.cloud },
 
   //other
-  {name: "JUnit", related: ["Java", "test"], category: Categories.lib },
+  { name: "JUnit", related: ["Java", "test"], category: Categories.lib },
+  { name: "Pytest", related: ["python", "test"], category: Categories.lib },
+  { name: "Terraform", related: ["aws", "cloud"], category: Categories.other },
   { name: "Cinder", related: ["C++"], category: Categories.lib },
   {
     name: "Linux",
     related: ["operating systems", "terminal", "systems"],
     category: Categories.other,
   },
+  { name: "Data Engineering", related: ["data", "pipelines"], category: Categories.other },
+  { name: "Data Architecture", related: ["data"], category: Categories.other },
   { name: "Agile Development", related: [], category: Categories.other },
   { name: "Waterfall Development", related: [], category: Categories.other },
   { name: "Signal Processing", related: [], category: Categories.other },
@@ -138,5 +158,4 @@ export const skillsFull: Array<skillEntry> = [
   { name: "Web Development", related: ["web"], category: Categories.other },
   { name: "Android Development", related: ["java"], category: Categories.other },
   { name: "Git", related: ["version control"], category: Categories.other },
-
 ];

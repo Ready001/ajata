@@ -13,9 +13,11 @@ const Timeline: React.FunctionComponent<TimelineProps> = ({ setObserver }) => {
   const timeline1 = useRef(null);
   const timeline2 = useRef(null);
   const timeline3 = useRef(null);
+  const timeline4 = useRef(null);
   const circle1 = useRef(null);
   const circle2 = useRef(null);
   const circle3 = useRef(null);
+  const circle4 = useRef(null);
   const circleStart = useRef(null);
 
   useEffect(() => {
@@ -23,9 +25,11 @@ const Timeline: React.FunctionComponent<TimelineProps> = ({ setObserver }) => {
       setObserver(timeline1.current);
       setObserver(timeline2.current);
       setObserver(timeline3.current);
+      setObserver(timeline4.current);
       setObserver(circle1.current);
       setObserver(circle2.current);
       setObserver(circle3.current);
+      setObserver(circle4.current);
       setObserver(circleStart.current);
     } //eslint-disable-next-line
   }, []);
@@ -34,22 +38,28 @@ const Timeline: React.FunctionComponent<TimelineProps> = ({ setObserver }) => {
     <div className="wrapper">
       <div className="circleWrapper">
         <div id="circle1" ref={circle1} className="circle">
-          Jun 2022 - Sep 2022
+          Aug 2023 - Present
         </div>
       </div>
       <div id="timeline1" ref={timeline1} className="timeline" />
       <div className="circleWrapper">
         <div id="circle2" ref={circle2} className="circle">
-          Jun 2021 - Dec 2021
+          Jun 2022 - Sep 2022
         </div>
       </div>
       <div id="timeline2" ref={timeline2} className="timeline" />
       <div className="circleWrapper">
         <div id="circle3" ref={circle3} className="circle">
-          Oct 2018 - Feb 2020
+          Jun 2021 - Dec 2021
         </div>
       </div>
       <div id="timeline3" ref={timeline3} className="timeline" />
+      <div className="circleWrapper">
+        <div id="circle4" ref={circle4} className="circle">
+          Oct 2018 - Feb 2020
+        </div>
+      </div>
+      <div id="timeline4" ref={timeline4} className="timeline" />
       <div id="circleStart" ref={circleStart} className="circle" />
     </div>
   );
@@ -70,8 +80,47 @@ function Experience() {
           />
         </div>
 
-        {/* amazon */}
         <div className="entries-container">
+          
+          {/* state farm */}
+          <div className="entry">
+            <div className="entry-title-container">
+              <img
+                src={process.env.PUBLIC_URL + "/state_farm_logo.png"}
+                className="company-logo"
+                alt="Logo of Amazon"
+              />
+              <div className="entry-title">
+                <h2>Data Engineer</h2>
+                <h3>State Farm &nbsp; &bull; &nbsp; Denver, Colorado</h3>
+              </div>
+            </div>
+
+            <div className="entry-content">
+              <ul className="summary-list">
+                <li>
+                  Led a team of 3 in designing and implementing data pipelines using 
+                  <b>Python</b> Glue jobs, <b>PySpark</b>, and <b>Pandas</b> to extract, 
+                  transform, and load (<b>ETL</b>) diverse data sources and formats 
+                  from an AWS S3 data lake into a <b>PostgreSQL</b> Redshift data warehouse.
+                </li>
+                <li>
+                  Designed and enhanced the Redshift database schema to 
+                  support data pipeline outputs and improve query performance.
+                </li>
+                <li>
+                  Streamlined the data pipeline processes to boost efficiency 
+                  and ensure smooth data integration.
+                </li>
+                <li>
+                  Implemented data quality checks and monitoring to ensure 
+                  accuracy, reliability, and maintainability of pipeline workflows.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* amazon */}
           <div className="entry">
             <div className="entry-title-container">
               <img

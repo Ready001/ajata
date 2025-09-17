@@ -15,13 +15,13 @@ class Intro extends React.Component<IntroProps, IntroState> {
         <h4 className="about">
           <TypeAnimation
             sequence={[
-              "A Computer Science Major at UIUC",
-              1000,
-              "A Computer Science Major at the Univerist",
-              100,
-              "A Computer Science Major at the University of Illinois at Urbana-Champaign",
+              "A DE",
+              300,
+              "A Data Engineer",
+              400,
+              "A Data Engineer at State Farm",
               ]}
-            speed={60}
+            speed={50}
           />
           <br/>
           <br/>
@@ -33,9 +33,11 @@ class Intro extends React.Component<IntroProps, IntroState> {
               1000,
               "I enjoy reading",
               1000,
-              "I enjoy rock climbing",
+              "I enjoy messing with linux",
               1000,
               "I enjoy cooking",
+              1000,
+              "I enjoy gaming"
               ]}
             speed={40}
             cursor={false}
