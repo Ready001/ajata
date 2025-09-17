@@ -28,7 +28,7 @@ class Intro extends React.Component<IntroProps, IntroState> {
           <TypeAnimation
             sequence={
               [
-              5000,
+              2000,
               "I enjoy hiking",
               1000,
               "I enjoy reading",
